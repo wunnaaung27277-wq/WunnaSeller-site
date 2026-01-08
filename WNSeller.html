@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wunna Kpay Wave Seller</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <h1>Wunna Kpay Wave Seller</h1>
+      <p class="sub">Telegram နဲ့ တိုက်ရိုက်ချိတ်ပြီး order တင်နိုင်ပါတယ်</p>
+    </header>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="contact">Acc ဆက်သွယ်ရန်</button>
+      <button class="tab" data-tab="buy">Acc ဝယ်ရန်</button>
+    </div>
+
+    <section id="contact" class="panel show">
+      <div class="card">
+        <h2>Admin Contact</h2>
+        <div class="btns">
+          <a class="btn" href="https://t.me/Wunna_Aung_2006" target="_blank" rel="noreferrer">Telegram Admin</a>
+          <a class="btn" href="https://t.me/WunnaAungSeller" target="_blank" rel="noreferrer">Telegram Channel</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="buy" class="panel">
+      <div class="card">
+        <h2>ငွေလွှဲရန် (Kpay Only)</h2>
+        <div class="paybox">
+          <div><b>Kpay:</b> 09775767821</div>
+          <div><b>Name:</b> Ma May Thet Oo</div>
+        </div>
+
+        <form id="orderForm">
+          <label>Acc နာမည် / အမျိုးအစား</label>
+          <input name="acc_name" placeholder="ဥပမာ: Facebook Acc / Game Acc..." required />
+
+          <label>ဖုန်းနံပါတ်</label>
+          <input name="phone" placeholder="09xxxxxxxx" required />
+
+          <label>Telegram သို့မဟုတ် Facebook link</label>
+          <input name="link" placeholder="t.me/username or facebook link" required />
+
+          <label>ငွေလွှဲ Screenshot (Optional)</label>
+          <input name="proof" type="file" accept="image/*" />
+
+          <button type="submit" id="submitBtn">အော်ဒါတင်မည်</button>
+          <p id="msg" class="msg"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <small>© Wunna Kpay Wave Seller</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
