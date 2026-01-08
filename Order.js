@@ -133,3 +133,20 @@ export const handler = async (event) => {
     return { statusCode: 500, body: JSON.stringify({ error: String(e?.message || e) }) };
   }
 };
+document.getElementById("orderForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+
+  const res = await fetch("/.netlify/functions/sendOrder", {
+    method: "POST",
+    body: formData
+  });
+
+  if (res.ok) {
+    alert("Order ပို့ပြီးပါပြီ ✅");
+    this.reset();
+  } else {
+    alert("Order မပို့နိုင်ပါ ❌");
+  }
+});
